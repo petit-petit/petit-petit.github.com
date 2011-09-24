@@ -1,26 +1,123 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es"> 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Petit - Petit</title>
-	<meta name="description" content="prueba de petit-petit" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Petit - Petit</title>
+  <meta name="description" content="Postres de todo tipo" />
 
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/960_16.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" />
+  <link href='http://fonts.googleapis.com/css?family=Antic' rel='stylesheet' type='text/css'/>
+  <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700' rel='stylesheet' type='text/css'/>
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/slides.min.jquery.js"></script>	    
+  <script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>	
+  <script type="text/javascript">
+    $(function(){
+      $('#slides').slides({
+        preload: true,
+        preloadImage: 'img/css/loading.gif',
+        play: 5000,
+        pause: 2500,
+        hoverPause: true
+      });
+    });
+    $(document).ready(function() {
+      $("a#cont").fancybox();
+    });
+  </script>
 </head>
-    
+ 
 <body>
-	<div id="contacto">
-		<h1>Informaci&oacute;n de Contacto</h1>
-		petitpetit.va@gmail.com <br>
-		(0414)1250785 <br>
-		(0424)2518930 <br>
-	</div>
-	<div id="const">
-		<img src="img/construccion.png" alt="petit-construc"/>
-	</div>
-	
+  <div id="header">
+  <div id="logo" class="container_16 clearfix">
+    <div class="grid_6">
+      <a href="/"><img src="/img/css/header.png" alt="petit-petit header"/></a>
+    </div>
+    <ul id="contacto">
+      <li><a href="mailto:petitpetit.va@gmail.com">petitpetit.va@gmail.com</a></li>
+      <li>(0414) 1250785 </li>
+      <li>(0424) 2518930</li>
+    </ul>
+  </div>
+  <ul id="nav">
+    <li id="boton1"><a class="selected" href="/">Inicio</a></li>
+    <li id="boton2"><a href="/tortas-y-pies">Tortas y Pies</a></li>
+    <li id="boton3"><a href="/tortas-especiales">Tortas Especiales</a></li>
+    <li id="boton4"><a href="/miniaturas">Miniaturas</a></li>
+    <li id="boton5"><a href="/mesas-de-postres">Mesas de postres</a></li>
+    <li id="boton6"><a href="/curiosidades">Curiosidades</a></li>
+  </ul>
+</div>
 
+  <div id="main" class="container_16 clearfix principal"> 
+
+    <div id="slideshow" class="grid_9">
+      <div id="slides">
+        <div class="slides_container">
+          <div> 
+            <img src="/img/slideshow/slide_1.jpg" alt="Torta de Boda"/> 
+          </div> 
+          <div> 
+            <img src="/img/slideshow/slide_2.jpg" alt="Torta de Chocolate"/> 
+          </div> 
+          <div> 
+            <img src="/img/slideshow/slide_3.jpg" alt="Pies"/> 
+          </div> 
+          <div> 
+            <img src="/img/slideshow/slide_4.jpg" alt="Polvorosas"/> 
+          </div> 
+          <div> 
+            <img src="/img/slideshow/slide_5.jpg" alt="Shots variados"/> 
+          </div> 
+          <div> 
+            <img src="/img/slideshow/slide_6.jpg" alt="Torta de circulos morada"/> 
+          </div> 
+          <div> 
+            <img src="/img/slideshow/slide_7.jpg" alt="Bombas de Arequipe"/> 
+          </div> 
+          <div> 
+            <img src="/img/slideshow/slide_8.jpg" alt="Torta de Arequipe"/> 
+          </div> 
+          <div> 
+            <img src="/img/slideshow/slide_9.jpg" alt="Torta Wonder-Woman"/> 
+          </div> 
+        </div>
+        <a href="#" class="prev"><img src="/img/css/arrow-prev.png" alt="Anterior"/></a> 
+        <a href="#" class="next"><img src="/img/css/arrow-next.png" alt="Siguiente"/></a>
+      </div> 
+    </div>
+
+    <div class="grid_7"> 
+      <h1> 
+        Postres Petit-Petit
+      </h1> 
+
+      <p>
+         Bienvenido al dulce mundo de Petit-Petit, donde podrás dejar volar tu
+         imaginación y creatividad.
+      </p>
+      <p>
+         Aquí te ofrecemos una gran variedad de postres para cualquier tipo de
+         ocasión, desde la torta de tus sueños, hasta pequeños dulces para
+         compartir con tus amigos. Te invitamos a descubrirnos y no dudes en
+         contactarnos para celebrar contigo esos momentos especiales.
+      </p>
+    </div> 
+
+    <a id="cont" href="/img/tarjeta.png">
+      <img src="img/css/contactanos.png" alt="Contactanos"/>
+    </a>
+  </div> 
+
+  <div id="footer">
+  <a href="/"><img src="/img/css/footer.png" alt="petit-petit footer"/></a>
+  <p>&copy; 2011 Petit-Petit Gourmet C.A. J-30912077-8</p>
+  <p>Todos lo derechos reservados</p>
+</div>
 </body>
 </html>
