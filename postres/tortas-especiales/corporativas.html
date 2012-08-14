@@ -1,95 +1,10 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="utf-8">
-
-  <title>Tortas Especiales | Petit-Petit</title>
-  <meta name="description" content="Porque esos momentos especiales merecen una torta igual de especial, en Petit-Petit creamos las tortas más deliciosas, creativas y hermosas para tí">
-
-  <meta name="viewport" content="width=device-width">
-
-  <link rel="stylesheet" href="/css/grid.css">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,800">
-
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-  <!--script src="/js/hide.js"></script-->
-  <script>
-    $(document).ready(function(){
-      $("a.gallery").fancybox({
-        'titlePosition': 'inside',
-        'overlayOpacity': 0.1,
-        'padding': 20
-      });
-      $('a.inline').fancybox({
-        'hideOnContentClick': true
-      });
-    });
-    $(document).ready(function(){
-      $('#tabs div.tab').hide();
-      $('#tabs div:first').show();
-      $('#tabs ul li:first').addClass('active');
-
-      $('#tabs ul li a').click(function(){
-        $('#tabs ul li').removeClass('active');
-        $(this).parent().addClass('active');
-        var currentTab = $(this).attr('href');
-        $('#tabs div.tab').hide();
-        $(currentTab).show();
-        return false;
-      });
-    });
-  </script>
-</head>
-
-<body>
-  <div id="header">
-  <a href="/"><img src="/img/css/logo.png"></a>
-</div>
-
-  <div class="container_16">
-    <ul id="nav" class="grid_16">
-  <li class="first">
-    <a href="/" class="parent">Inicio</a>
-  </li>
-  <li class="first">
-    <a href="/postres.html" id="galerias" class="parent">Postres</a>
-    <ul>
-      <li><a href="/postres/tortas.html">Tortas</a></li>
-      <li><a href="/postres/pies.html">Pies</a></li>
-      <li><a href="/postres/tortas-especiales.html">Tortas Especiales</a></li>
-      <li><a href="/postres/miniaturas.html">Miniaturas</a></li>
-      <li><a href="/postres/mesa-de-postres.html">Mesa de Postres</a></li>
-    </ul>
-  </li>
-  <li class="first">
-    <a href="/preguntas-frecuentes/" id="faqs" class="parent">Preguntas Frecuentes</a>
-  </li>
-  <li class="first">
-    <a href="#" id="nosotros" class="parent">Nosotros</a>
-    <ul>
-      <!--li><a href="/nosotros/quienes-somos.html">Quienes Somos</a></li-->
-      <li><a href="/nosotros/testimonios.html">Testimonios</a></li>
-      <!--li><a href="/nosotros/prensa.html">Prensa</a></li-->
-    </ul>
-  </li>
-  <li>
-    <a href="#" id="contactanos" class="parent">Contáctanos</a>
-    <ul class="last">
-      <!--li><a href="/contactanos/datos-de-contacto.html">Info</a></li>
-      <li><a href="/contactanos/pedido-en-linea.html">Pedido en Línea</a></li>
-      <li><a href="/contactanos/dudas-y-comentarios.html">Dudas y Comentarios</a></li-->
-      <li><a href="/contactanos/redes-sociales.html">Redes Sociales</a></li>
-    </ul>
-  </li>
-</ul>
-<div class="clear"></div>
-
-    <div id="content" class="clearfix">
-      <div class="grid_16">
-  <h1><a href="/postres/tortas-especiales" class="back">Tortas Especiales</a> : Corporativas</h1>
+---
+layout: default 
+title: Tortas Especiales | Petit-Petit
+description: Porque esos momentos especiales merecen una torta igual de especial, en Petit-Petit creamos las tortas más deliciosas, creativas y hermosas para tí
+---
+<div class="grid_16">
+  <h1><a href="/postres/tortas-especiales.html" class="back">Tortas Especiales</a> : Corporativas</h1>
 
   <div class="grid_5 custom_5">
     <a rel="gallery" href="/img/galerias/tortas-especiales/torta_amazonas_muebles.jpg" class="gallery" title="Torta Amazonas Muebles">
@@ -132,13 +47,3 @@
     </a>
   </div>
 </div>
-
-    </div>
-    <p id="footer" class="grid_16">
-  &copy 2011-2012 Petit-Petit Gourmet C.A. RIF J-30912077-8.<br />
-  Todos los derechos reservados.
-</p>
-
-  </div>
-</body>
-</html>
