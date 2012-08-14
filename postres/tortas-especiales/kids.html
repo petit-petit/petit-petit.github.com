@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+
+  <title>Tortas Especiales | Petit-Petit</title>
+  <meta name="description" content="Porque esos momentos especiales merecen una torta igual de especial, en Petit-Petit creamos las tortas más deliciosas, creativas y hermosas para tí">
+
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="/css/grid.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,800">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+  <!--script src="/js/hide.js"></script-->
+  <script>
+    $(document).ready(function(){
+      $("a.gallery").fancybox({
+        'titlePosition': 'inside',
+        'overlayOpacity': 0.1,
+        'padding': 20
+      });
+      $('a.inline').fancybox({
+        'hideOnContentClick': true
+      });
+    });
+    $(document).ready(function(){
+      $('#tabs div.tab').hide();
+      $('#tabs div:first').show();
+      $('#tabs ul li:first').addClass('active');
+
+      $('#tabs ul li a').click(function(){
+        $('#tabs ul li').removeClass('active');
+        $(this).parent().addClass('active');
+        var currentTab = $(this).attr('href');
+        $('#tabs div.tab').hide();
+        $(currentTab).show();
+        return false;
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div id="header">
+  <a href="/"><img src="/img/css/logo.png"></a>
+</div>
+
+  <div class="container_16">
+    <ul id="nav" class="grid_16">
+  <li class="first">
+    <a href="/" class="parent">Inicio</a>
+  </li>
+  <li class="first">
+    <a href="/postres" id="galerias" class="parent">Postres</a>
+    <ul>
+      <li><a href="/postres/tortas">Tortas</a></li>
+      <li><a href="/postres/pies">Pies</a></li>
+      <li><a href="/postres/tortas-especiales">Tortas Especiales</a></li>
+      <li><a href="/postres/miniaturas">Miniaturas</a></li>
+      <li><a href="/postres/mesa-de-postres">Mesa de Postres</a></li>
+    </ul>
+  </li>
+  <li class="first">
+    <a href="/preguntas-frecuentes/" id="faqs" class="parent">Preguntas Frecuentes</a>
+  </li>
+  <li class="first">
+    <a href="#" id="nosotros" class="parent">Nosotros</a>
+    <ul>
+      <!--li><a href="/nosotros/quienes-somos.html">Quienes Somos</a></li-->
+      <li><a href="/nosotros/testimonios">Testimonios</a></li>
+      <!--li><a href="/nosotros/prensa.html">Prensa</a></li-->
+    </ul>
+  </li>
+  <li>
+    <a href="#" id="contactanos" class="parent">Contáctanos</a>
+    <ul class="last">
+      <!--li><a href="/contactanos/datos-de-contacto.html">Info</a></li>
+      <li><a href="/contactanos/pedido-en-linea.html">Pedido en Línea</a></li>
+      <li><a href="/contactanos/dudas-y-comentarios.html">Dudas y Comentarios</a></li-->
+      <li><a href="/contactanos/redes-sociales">Redes Sociales</a></li>
+    </ul>
+  </li>
+</ul>
+<div class="clear"></div>
+
+    <div id="content" class="clearfix">
+      <div class="grid_16">
+  <h1><a href="/postres/tortas-especiales" class="back">Tortas Especiales</a> : Kids</h1>
+
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_angry_birds_2.jpg" class="gallery" title="Torta Angry Birds 2">
+      <img src="/img/thumbnails/tortas-especiales/torta_angry_birds_2.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_bayblade.jpg" class="gallery" title="Torta Bayblade">
+      <img src="/img/thumbnails/tortas-especiales/torta_bayblade.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5 l">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_angry_birds_1.jpg" class="gallery" title="Torta de Angry Birds">
+      <img src="/img/thumbnails/tortas-especiales/torta_angry_birds_1.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_de_bambam.jpg" class="gallery" title="Torta de Bambam (Los Picapiedras)">
+      <img src="/img/thumbnails/tortas-especiales/torta_de_bambam.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_de_blancanieves_y_los_7_enanitos.jpg" class="gallery" title="Torta de Blancanieves y los 7 enanitos">
+      <img src="/img/thumbnails/tortas-especiales/torta_de_blancanieves_y_los_7_enanitos.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5 l">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_de_bumbble_bee.jpg" class="gallery" title="Torta de Bumble Bee">
+      <img src="/img/thumbnails/tortas-especiales/torta_de_bumbble_bee.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_de_cars_finn_mcmissile.jpg" class="gallery" title="Torta de Cars (Finn McMissile)">
+      <img src="/img/thumbnails/tortas-especiales/torta_de_cars_finn_mcmissile.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_de_cars_con_carritos_en_3D.jpg" class="gallery" title="Torta de Cars con Carritos en 3D">
+      <img src="/img/thumbnails/tortas-especiales/torta_de_cars_con_carritos_en_3D.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5 l">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_de_cars_grande.jpg" class="gallery" title="Torta de Cars grande">
+      <img src="/img/thumbnails/tortas-especiales/torta_de_cars_grande.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_de_cars_morochos.jpg" class="gallery" title="Torta de Cars Morochos">
+      <img src="/img/thumbnails/tortas-especiales/torta_de_cars_morochos.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_de_cars_pequena.jpg" class="gallery" title="Torta de Cars pequeña">
+      <img src="/img/thumbnails/tortas-especiales/torta_de_cars_pequena.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5 l">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_de_jungla.jpg" class="gallery" title="Torta de la Jungla">
+      <img src="/img/thumbnails/tortas-especiales/torta_de_jungla.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_de_la_franela_vinotinto.jpg" class="gallery" title="Torta de la franela Vinotinto">
+      <img src="/img/thumbnails/tortas-especiales/torta_de_la_franela_vinotinto.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_de_mickey.jpg" class="gallery" title="Torta de Mickey">
+      <img src="/img/thumbnails/tortas-especiales/torta_de_mickey.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5 l">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_de_phineas_y_ferb.jpg" class="gallery" title="Torta de Phineas y Ferb">
+      <img src="/img/thumbnails/tortas-especiales/torta_de_phineas_y_ferb.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_de_pitufina.jpg" class="gallery" title="Torta Pitufina">
+      <img src="/img/thumbnails/tortas-especiales/torta_de_pitufina.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_de_rapunzel_2.jpg" class="gallery" title="Torta Raspunzel 2">
+      <img src="/img/thumbnails/tortas-especiales/torta_de_rapunzel_2.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5 l">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_dora_la_exploradora.jpg" class="gallery" title="Torta Dora La Exploradora 3">
+      <img src="/img/thumbnails/tortas-especiales/torta_dora_la_exploradora.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_dora_3.jpg" class="gallery" title="Torta Dora La Exploradora 2">
+      <img src="/img/thumbnails/tortas-especiales/torta_dora_3.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_futbol.jpg" class="gallery" title="Torta Fútbol">
+      <img src="/img/thumbnails/tortas-especiales/torta_futbol.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5 l">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_go_diego_go.jpg" class="gallery" title="Torta Go Diego Go">
+      <img src="/img/thumbnails/tortas-especiales/torta_go_diego_go.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_minnie_verde.jpg" class="gallery" title="Torta Minnie Verde">
+      <img src="/img/thumbnails/tortas-especiales/torta_minnie_verde.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_minnie_rosada.jpg" class="gallery" title="Torta Minnie Rosada">
+      <img src="/img/thumbnails/tortas-especiales/torta_minnie_rosada.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5 l">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_de_rapunzel_1.jpg" class="gallery" title="Torta Raspunzel">
+      <img src="/img/thumbnails/tortas-especiales/torta_de_rapunzel_1.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_spiderman.jpg" class="gallery" title="Torta Spiderman 2">
+      <img src="/img/thumbnails/tortas-especiales/torta_spiderman.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_tinkerbell.jpg" class="gallery" title="Torta Tinkerbell 2">
+      <img src="/img/thumbnails/tortas-especiales/torta_tinkerbell.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5 l">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_backyardigans.jpg" class="gallery" title="Torta Backyardigans">
+      <img src="/img/thumbnails/tortas-especiales/torta_backyardigans.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_ben.jpg" class="gallery" title="Torta Ben">
+      <img src="/img/thumbnails/tortas-especiales/torta_ben.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_dora_1.jpg" class="gallery" title="Torta Dora la Exploradora">
+      <img src="/img/thumbnails/tortas-especiales/torta_dora_1.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5 l">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_mario_bros.jpg" class="gallery" title="Torta Mario Bros">
+      <img src="/img/thumbnails/tortas-especiales/torta_mario_bros.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_spiderman_2.jpg" class="gallery" title="Torta Spiderman 1">
+      <img src="/img/thumbnails/tortas-especiales/torta_spiderman_2.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_spiderman_II.jpg" class="gallery" title="Torta Spiderman 2">
+      <img src="/img/thumbnails/tortas-especiales/torta_spiderman_II.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5 l">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_disney.jpg" class="gallery" title="Torta Disney">
+      <img src="/img/thumbnails/tortas-especiales/torta_disney.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_optimus_prime.jpg" class="gallery" title="Torta Optimus Prime">
+      <img src="/img/thumbnails/tortas-especiales/torta_optimus_prime.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_1.jpg" class="gallery" title="Torta Número 1">
+      <img src="/img/thumbnails/tortas-especiales/torta_1.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5 l">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_wonder.jpg" class="gallery" title="Torta Mujer Maravilla">
+      <img src="/img/thumbnails/tortas-especiales/torta_wonder.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_cara_papa.jpg" class="gallery" title="Torta Cara de Papa">
+      <img src="/img/thumbnails/tortas-especiales/torta_cara_papa.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_buzzlightyear.jpg" class="gallery" title="Torta Buzz Lightyear">
+      <img src="/img/thumbnails/tortas-especiales/torta_buzzlightyear.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5 l">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_cars.jpg" class="gallery" title="Torta Cars">
+      <img src="/img/thumbnails/tortas-especiales/torta_cars.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_vaca.jpg" class="gallery" title="Torta de vaca">
+      <img src="/img/thumbnails/tortas-especiales/torta_vaca.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_x_men.jpg" class="gallery" title="Torta XMEN">
+      <img src="/img/thumbnails/tortas-especiales/torta_x_men.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5 l">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_tinkerbell_2.jpg" class="gallery" title="Torta Tinkerbell">
+      <img src="/img/thumbnails/tortas-especiales/torta_tinkerbell_2.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_mickey_playhouse.jpg" class="gallery" title="Torta Mickey Playhouse">
+      <img src="/img/thumbnails/tortas-especiales/torta_mickey_playhouse.jpg">
+    </a>
+  </div>
+</div>
+
+    </div>
+    <p id="footer" class="grid_16">
+  &copy 2011-2012 Petit-Petit Gourmet C.A. RIF J-30912077-8.<br />
+  Todos los derechos reservados.
+</p>
+
+  </div>
+</body>
+</html>

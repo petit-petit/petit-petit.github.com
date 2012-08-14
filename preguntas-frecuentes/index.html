@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+
+  <title>Preguntas frecuentes | Petit-Petit</title>
+  <meta name="description" content="¿Quieres saber algo más de Petit-Petit? Este es el lugar donde respondemos las preguntas más frecuentes que nos hacen llegar">
+
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="/css/grid.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,800">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+  <!--script src="/js/hide.js"></script-->
+  <script>
+    $(document).ready(function(){
+      $("a.gallery").fancybox({
+        'titlePosition': 'inside',
+        'overlayOpacity': 0.1,
+        'padding': 20
+      });
+      $('a.inline').fancybox({
+        'hideOnContentClick': true
+      });
+    });
+    $(document).ready(function(){
+      $('#tabs div.tab').hide();
+      $('#tabs div:first').show();
+      $('#tabs ul li:first').addClass('active');
+
+      $('#tabs ul li a').click(function(){
+        $('#tabs ul li').removeClass('active');
+        $(this).parent().addClass('active');
+        var currentTab = $(this).attr('href');
+        $('#tabs div.tab').hide();
+        $(currentTab).show();
+        return false;
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div id="header">
+  <a href="/"><img src="/img/css/logo.png"></a>
+</div>
+
+  <div class="container_16">
+    <ul id="nav" class="grid_16">
+  <li class="first">
+    <a href="/" class="parent">Inicio</a>
+  </li>
+  <li class="first">
+    <a href="/postres" id="galerias" class="parent">Postres</a>
+    <ul>
+      <li><a href="/postres/tortas">Tortas</a></li>
+      <li><a href="/postres/pies">Pies</a></li>
+      <li><a href="/postres/tortas-especiales">Tortas Especiales</a></li>
+      <li><a href="/postres/miniaturas">Miniaturas</a></li>
+      <li><a href="/postres/mesa-de-postres">Mesa de Postres</a></li>
+    </ul>
+  </li>
+  <li class="first">
+    <a href="/preguntas-frecuentes/" id="faqs" class="parent">Preguntas Frecuentes</a>
+  </li>
+  <li class="first">
+    <a href="#" id="nosotros" class="parent">Nosotros</a>
+    <ul>
+      <!--li><a href="/nosotros/quienes-somos.html">Quienes Somos</a></li-->
+      <li><a href="/nosotros/testimonios">Testimonios</a></li>
+      <!--li><a href="/nosotros/prensa.html">Prensa</a></li-->
+    </ul>
+  </li>
+  <li>
+    <a href="#" id="contactanos" class="parent">Contáctanos</a>
+    <ul class="last">
+      <!--li><a href="/contactanos/datos-de-contacto.html">Info</a></li>
+      <li><a href="/contactanos/pedido-en-linea.html">Pedido en Línea</a></li>
+      <li><a href="/contactanos/dudas-y-comentarios.html">Dudas y Comentarios</a></li-->
+      <li><a href="/contactanos/redes-sociales">Redes Sociales</a></li>
+    </ul>
+  </li>
+</ul>
+<div class="clear"></div>
+
+    <div id="content" class="clearfix">
+      <img id="fotocinta" class="grid_4" src="/img/faqs.jpg">
+<div id="faq" class="grid_10 prefix_1">
+
+  <h1>Preguntas Frecuentes</h1>
+
+  <h2 class="faq">¿Cómo hago un pedido?</h2>
+  <div class="answer">
+    <p>
+      La mejor forma es mediante nuestro formulario de pedido en línea. Pero
+      también nos puedes escribir directamente a nuestro email eee@petit-petit.com.ve.
+    </p>
+    <p>
+      También puedes contactarnos por nuestros teléfonos: (0212) 3179724 y
+      (0414) 1250785.
+    </p>
+  </div>
+
+  <h2 class="faq">¿Cómo son las tortas especiales?</h2>
+  <div class="answer">
+    <p>
+      Son tortas personalizadas que se hacen a la medida para cada cliente. Se
+      pueden preparar de diferentes tamaños, colores y sabores. Tú nos dices
+      cómo la quieres y nosotros nos encargamos de prepararla a tu gusto.
+      Sólo tienes que contactarnos y preguntarnos.
+    </p>
+  </div>
+
+  <h2 class="faq">¿Para cuántas personas puede ser una torta?</h2>
+  <div class="answer">
+    <p>
+      Los tamaños varían según los comensales que sean. La torta grande es
+      para 15 a 20 personas aproximadamente. Recuerda que puedes elegir la torta
+      del tamaño que necesites.
+    </p>
+  </div>
+
+  <h2 class="faq">¿Cuáles son los tipos de ponqué que ofrecen?</h2>
+  <div class="answer">
+    <p>
+      Ofrecemos varios tipos de ponqué: vainilla, chocolate, marmoleado,
+      dominó, vainilla con chispas de chocolate, vainilla con ralladura de
+      limón, naranja, piña, zanahoria.
+    </p>
+    <p>
+      Puedes escoger cualquier tipo de ponqué para las tortas especiales, y si
+      son de más de dos pisos puedes escoger sabores diferentes para cada piso.
+    </p>
+    <p>
+      Si la torta es en forma 3D te recomendamos usar ponqué de chocolate o
+      marmoleado con el relleno que desees.
+    </p>
+  </div>
+
+  <h2 class="faq">¿Cuáles son los tipos de relleno que ofrecen?</h2>
+  <div class="answer">
+    <p>
+      Ofrecemos varios tipos de relleno: arequipe, chocolate, dulce de guayaba,
+      guanábana, piña, naranja, queso crema para la de zanahoria, frutos
+      secos (nueces, almendras).
+    </p>
+    <p>
+      Puedes rellenar el ponqué que tu quieras con el relleno que desees, uno
+      de los favoritos es ponqué de dominó con relleno de arequipe.
+    </p>
+  </div>
+
+  <h2 class="faq">¿Con cuánto tiempo de anterioridad tengo que hacer el pedido?</h2>
+  <div class="answer">
+    <p>
+      ¡Lo antes posible! Si nos contactas con suficiente tiempo de anticipación,
+      te podremos garantizar tu pedido. El tiempo mínimo necesario para
+      realizar un pedido es de una semana antes. Igualmente, puedes contactarnos
+      si te olvidas de ese momento especial y quieres una torta Petit-Petit. Si
+      hay disponibilidad, la hacemos para ti sin ningún problema.
+    </p>
+  </div>
+
+  <h2 class="faq">¿Cuáles son los diferentes tamaños en que vienen los pies?
+  ¿Cuáles son los tamaños de los pies? ¿Cuáles son los tamaños de las tortas?</h2>
+  <div class="answer">
+    <p>
+      Los pies de tamaño Petit-Petit vienen en bandejas de 50 unidades.
+    </p>
+    <p>
+      Los pies de tamaño Petit vienen en bandejas de 24 unidades.
+    </p>
+    <p>
+      Los pies personales se venden a partir de 9 unidades.
+    </p>
+    <p>
+      Los pies grandes se venden por unidad.
+    </p>
+    <p>
+      Puedes pedir más de las unidades mínimas mencionadas sin problema.
+    </p>
+    <p>
+      Nuestros pies vienen en los siguientes tamaños:
+    </p>
+    <ul>
+      <li>Pie Petit-Petit: 3.5 cm</li>
+      <li>Pie Petit: 7 cm</li>
+      <li>Pie Personal: 12 cm</li>
+      <li>Pie Grand: 27 cm</li>
+    </ul>
+    <p>
+      Y nuestras tortas en:
+    </p>
+    <ul>
+      <li>Torta Petit-Petit: 5 cm</li>
+      <li>Torta Triangular: 7 cm</li>
+      <li>Torta Personal: 10 cm</li>
+      <li>Torta Grand: 25 cm</li>
+    </ul>
+  </div>
+
+  <h2 class="faq">¿Cuáles son los sabores de los pies? ¿Se puede ordenar pies
+  de distintos sabores en una misma bandeja?</h2>
+  <div class="answer">
+    <p>
+      Ofrecemos una gran variedad de sabores: chocolate, manzana, limón,
+      parchita, piña, guayaba, guanábana, arequipe, chocolate blanco y
+      durazno. Adicionalmente ofrecemos otros sabores de frutas dependiendo de
+      la época del año. Estos sabores están disponibles para todos los pies
+      en cualquiera de sus tamaños.
+    </p>
+    <p>
+      Hacemos bandejas con cualquier combinación de sabores,
+      así como de uno sólo.
+    </p>
+  </div>
+  
+  <h2 class="faq">¿Es posible ordenar una torta que no esté en el menú?</h2>
+  <div class="answer">
+    <p>
+      ¡Claro! No dudes en comunicarte con nosotros, que con gusto 
+      realizaremos la torta que desees.
+    </p>
+  </div>
+
+  <h2 class="faq">¿Realizan entregas a domicilio?</h2>
+  <div class="answer">
+    <p>
+      Si ofrecemos servicio delivery y cubre varias zonas de Caracas. Al
+      realizar tu pedido, incluye la dirección y nosotros te diremos si
+      nuestro servicio está disponible para esa zona. En caso negativo,
+      podemos llegar a un acuerdo para la entrega de tu postre de la manera
+      más conveniente para todos.
+    </p>
+  </div>
+  
+  <h2 class="faq">¿Cuáles son los métodos de pago?</h2>
+  <div class="answer">
+    <p>
+      Aceptamos transferencias bancarias (únicamente de Banesco), cheques y
+      efectivo.
+    </p>
+  </div>
+
+  <h2 class="faq">¿En qué momento se realizaría el pago?</h2>
+  <div class="answer">
+    <p>
+      Si es una torta grande o un pedido grande, se pide un adelanto de la mitad
+      del monto total. La otra mitad la pagarías al momento de la entrega. No
+      hay reembolso por cancelación, si ésta no se hace con 48 horas de
+      anticipación a la fecha de entrega acordada.
+    </p>
+    <p>
+      Si es una torta normal o una bandeja de pies, sólo pagas al momento de la
+      entrega.
+    </p>
+  </div>
+
+  <h2 class="faq">¿Cuáles son los precios de los postres?</h2>
+  <div class="answer">
+    <p>
+      Depende del tipo de postre y el tamaño. Si estás interesado en alguno de
+      nuestros postres, no dudes en comunicarte con nosotros, ya sea por vía
+      teléfonica, por email o nuestro formulario de contacto, y te
+      responderemos a la brevedad posible.
+    </p>
+    <p>
+      También puedes usar nuestro formulario de pedido en línea, y recibirás
+      un correo con el precio de tu pedido.
+    </p>
+  </div>
+
+  <h2 class="faq">¿Qué días realizan las entregas para los eventos?</h2>
+  <div class="answer">
+    <p>
+      Todos nuestros productos son hechos de los mejores y más frescos
+      ingredientes, por lo tanto el pedido se entrega el día del evento a la
+      hora acordada entre el cliente y nosotros, para garantizar su
+      frescura.
+    </p>
+    <p>
+      El cliente debe proporcionar la dirección, un número de teléfono y el
+      nombre de la persona de contacto a quien se le va a entregar el pedido.
+    </p>
+  </div>
+</div>
+
+    </div>
+    <p id="footer" class="grid_16">
+  &copy 2011-2012 Petit-Petit Gourmet C.A. RIF J-30912077-8.<br />
+  Todos los derechos reservados.
+</p>
+
+  </div>
+</body>
+</html>

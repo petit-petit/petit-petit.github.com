@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+
+  <title>Tortas | Petit-Petit</title>
+  <meta name="description" content="Descubre nuestra gran variedad de tortas en múltiples tamaños y sabores">
+
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="/css/grid.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,800">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+  <!--script src="/js/hide.js"></script-->
+  <script>
+    $(document).ready(function(){
+      $("a.gallery").fancybox({
+        'titlePosition': 'inside',
+        'overlayOpacity': 0.1,
+        'padding': 20
+      });
+      $('a.inline').fancybox({
+        'hideOnContentClick': true
+      });
+    });
+    $(document).ready(function(){
+      $('#tabs div.tab').hide();
+      $('#tabs div:first').show();
+      $('#tabs ul li:first').addClass('active');
+
+      $('#tabs ul li a').click(function(){
+        $('#tabs ul li').removeClass('active');
+        $(this).parent().addClass('active');
+        var currentTab = $(this).attr('href');
+        $('#tabs div.tab').hide();
+        $(currentTab).show();
+        return false;
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div id="header">
+  <a href="/"><img src="/img/css/logo.png"></a>
+</div>
+
+  <div class="container_16">
+    <ul id="nav" class="grid_16">
+  <li class="first">
+    <a href="/" class="parent">Inicio</a>
+  </li>
+  <li class="first">
+    <a href="/postres" id="galerias" class="parent">Postres</a>
+    <ul>
+      <li><a href="/postres/tortas">Tortas</a></li>
+      <li><a href="/postres/pies">Pies</a></li>
+      <li><a href="/postres/tortas-especiales">Tortas Especiales</a></li>
+      <li><a href="/postres/miniaturas">Miniaturas</a></li>
+      <li><a href="/postres/mesa-de-postres">Mesa de Postres</a></li>
+    </ul>
+  </li>
+  <li class="first">
+    <a href="/preguntas-frecuentes/" id="faqs" class="parent">Preguntas Frecuentes</a>
+  </li>
+  <li class="first">
+    <a href="#" id="nosotros" class="parent">Nosotros</a>
+    <ul>
+      <!--li><a href="/nosotros/quienes-somos.html">Quienes Somos</a></li-->
+      <li><a href="/nosotros/testimonios">Testimonios</a></li>
+      <!--li><a href="/nosotros/prensa.html">Prensa</a></li-->
+    </ul>
+  </li>
+  <li>
+    <a href="#" id="contactanos" class="parent">Contáctanos</a>
+    <ul class="last">
+      <!--li><a href="/contactanos/datos-de-contacto.html">Info</a></li>
+      <li><a href="/contactanos/pedido-en-linea.html">Pedido en Línea</a></li>
+      <li><a href="/contactanos/dudas-y-comentarios.html">Dudas y Comentarios</a></li-->
+      <li><a href="/contactanos/redes-sociales">Redes Sociales</a></li>
+    </ul>
+  </li>
+</ul>
+<div class="clear"></div>
+
+    <div id="content" class="clearfix">
+      <div class="grid_10">
+
+  <div class="thumbnails grid_3 alpha">
+    <a rel="gallery1" href="/img/galerias/tortas/t-chocolate.jpg" class="gallery" title="Torta de chocolate<br /><span>Grand / Personal / Petit-Petit</span>">
+      <img src="/img/thumbnails/tortas/t-chocolate.jpg">
+    </a>
+  </div>
+  <div class="thumbnails grid_3">
+    <a rel="gallery1" href="/img/galerias/tortas/t-chocolate-scaramelo.jpg" class="gallery" title="Torta de chocolate sin caramelo">
+      <img src="/img/thumbnails/tortas/t-chocolate-scaramelo.jpg">
+    </a>
+  </div>
+  <div class="thumbnails grid_3 omega">
+    <a rel="gallery1" href="/img/galerias/tortas/t-arequipe.jpg" class="gallery" title="Torta de arequipe<br/><span>Grand / Personal / Petit-Petit</span>">
+      <img src="/img/thumbnails/tortas/t-arequipe.jpg">
+    </a>
+  </div>
+
+  <div class="thumbnails grid_3 alpha">
+    <a rel="gallery1" href="/img/galerias/tortas/t-arequipe-scaramelo.jpg" class="gallery" title="Torta de arequipe sin caramelo">
+      <img src="/img/thumbnails/tortas/t-arequipe-scaramelo.jpg">
+    </a>
+  </div>
+  <div class="thumbnails grid_3">
+    <a rel="gallery1" href="/img/galerias/tortas/t-zanahoria.jpg" class="gallery" title="Torta de zanahoria<br/><span>Grand / Triangular / Petit-Petit</span>">
+      <img src="/img/thumbnails/tortas/t-zanahoria.jpg">
+    </a>
+  </div>
+  <div class="thumbnails grid_3 omega">
+    <a rel="gallery1" href="/img/galerias/tortas/t-queso-criollo.jpg" class="gallery" title="Torta de queso criollo<br /><span>Grand / Petit-Petit</span>">
+      <img src="/img/thumbnails/tortas/t-queso-criollo.jpg">
+    </a>
+  </div>
+
+  <div class="thumbnails grid_3 alpha">
+    <a rel="gallery1" href="/img/galerias/tortas/cheesecake.jpg" class="gallery" title="Cheesecake<br /><span>Grand / Triangular / Petit-Petit</span>">
+      <img src="/img/thumbnails/tortas/cheesecake.jpg">
+    </a>
+  </div>
+  <div class="thumbnails grid_3">
+    <a rel="gallery1" href="/img/galerias/tortas/t-suspiro.jpg" class="gallery" title="Torta de suspiro">
+      <img src="/img/thumbnails/tortas/t-suspiro.jpg">
+    </a>
+  </div>
+  <div class="thumbnails grid_3 omega">
+    <a rel="gallery1" href="/img/galerias/tortas/t-naranja.jpg" class="gallery" title="Torta de naranja">
+      <img src="/img/thumbnails/tortas/t-naranja.jpg">
+    </a>
+  </div>
+  <div class="thumbnails grid_3 alpha">
+    <a rel="gallery1" href="/img/galerias/tortas/t-guanabana.jpg" class="gallery" title="Torta de guanábana">
+      <img src="/img/thumbnails/tortas/t-guanabana.jpg">
+    </a>
+  </div>
+  <div class="thumbnails grid_3">
+    <a rel="gallery1" href="/img/galerias/tortas/t-guayaba.jpg" class="gallery" title="Torta de guayaba">
+      <img src="/img/thumbnails/tortas/t-guayaba.jpg">
+    </a>
+  </div>
+  <div class="thumbnails grid_3 omega">
+    <a rel="gallery1" href="/img/galerias/tortas/m-chocolate.jpg" class="gallery" title="Marquesa de chocolate<br/><span>Grand / Shot</span>">
+      <img src="/img/thumbnails/tortas/m-chocolate.jpg">
+    </a>
+  </div>
+  <div class="thumbnails grid_3 alpha">
+    <a rel="gallery1" href="/img/galerias/tortas/m-parchita.jpg" class="gallery" title="Mousse de parchita<br/><span>Grand / Shot</span>">
+      <img src="/img/thumbnails/tortas/m-parchita.jpg">
+    </a>
+  </div>
+  <div class="thumbnails grid_3">
+    <a rel="gallery1" href="/img/galerias/tortas/tres-leches.jpg" class="gallery" title="Tres leches<br/><span>Grand / Shot</span>">
+      <img src="/img/thumbnails/tortas/tres-leches.jpg">
+    </a>
+  </div>
+  <div class="thumbnails grid_3 omega">
+    <a rel="gallery1" href="/img/galerias/tortas/domino.jpg" class="gallery" title="Torta dominó">
+      <img src="/img/thumbnails/tortas/domino.jpg">
+    </a>
+  </div>
+
+</div>
+
+<div class="grid_6 menu">
+  <h1>Tortas</h1>
+  <ul>
+    <li><a rel="gallery2" href="/img/galerias/tortas/t-chocolate.jpg" class="gallery" title="Torta de chocolate<br /><span>Grand / Personal / Petit-Petit</span>">Torta de chocolate</a></li>
+    <li><a rel="gallery2" href="/img/galerias/tortas/t-arequipe.jpg" class="gallery" title="Torta de arequipe<br/><span>Grand / Personal / Petit-Petit</span>">Torta de arequipe</a></li>
+    <li><a rel="gallery2" href="/img/galerias/tortas/t-zanahoria.jpg" class="gallery" title="Torta de zanahoria<br/><span>Grand / Triangular / Petit-Petit</span>">Torta de zanahoria</a></li>
+    <li><a rel="gallery2" href="/img/galerias/tortas/t-queso-criollo.jpg" class="gallery"title="Torta de queso criollo<br /><span>Grand / Petit-Petit</span>">Torta de queso criollo</a></li>
+    <li><a rel="gallery2" href="/img/galerias/tortas/cheesecake.jpg" class="gallery" title="Cheesecake<br /><span>Grand / Triangular / Petit-Petit</span>">Cheesecake</a></li>
+    <li><a rel="gallery2" href="/img/galerias/tortas/t-suspiro.jpg" class="gallery" title="Torta de suspiro">Torta de suspiro</a></li>
+    <li><a rel="gallery2" href="/img/galerias/tortas/t-naranja.jpg" class="gallery" title="Torta de naranja">Torta de naranja</a></li>
+    <li><a rel="gallery2" href="/img/galerias/tortas/t-guanabana.jpg" class="gallery" title="Torta de guanábana">Torta de guanábana</a></li>
+    <li><a rel="gallery2" href="/img/galerias/tortas/t-guayaba.jpg" class="gallery" title="Torta de guayaba">Torta de guayaba</a></li>
+    <li><a rel="gallery2" href="/img/galerias/tortas/m-chocolate.jpg" class="gallery" title="Marquesa de chocolate<br/><span>Grand / Shot</span>">Marquesa de chocolate</a></li>
+    <li><a rel="gallery2" href="/img/galerias/tortas/m-parchita.jpg" class="gallery" title="Mousse de parchita<br/><span>Grand / Shot</span>">Mousse de parchita</a></li>
+    <li><a rel="gallery2" href="/img/galerias/tortas/tres-leches.jpg" class="gallery" title="Tres leches<br/><span>Grand / Shot</span>">Tres leches</a></li>
+    <li><a rel="gallery2" href="/img/galerias/tortas/domino.jpg" class="gallery" title="Torta dominó">Torta dominó</a></li>
+    <li>Marquesa de almendras</li>
+    <li>Mousse de chocolate</li>
+  </ul>
+</div>
+<div class="clear"></div>
+
+    </div>
+    <p id="footer" class="grid_16">
+  &copy 2011-2012 Petit-Petit Gourmet C.A. RIF J-30912077-8.<br />
+  Todos los derechos reservados.
+</p>
+
+  </div>
+</body>
+</html>

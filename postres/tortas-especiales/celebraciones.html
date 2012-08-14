@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+
+  <title>Tortas Especiales | Petit-Petit</title>
+  <meta name="description" content="Porque esos momentos especiales merecen una torta igual de especial, en Petit-Petit creamos las tortas más deliciosas, creativas y hermosas para tí">
+
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="/css/grid.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,800">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+  <!--script src="/js/hide.js"></script-->
+  <script>
+    $(document).ready(function(){
+      $("a.gallery").fancybox({
+        'titlePosition': 'inside',
+        'overlayOpacity': 0.1,
+        'padding': 20
+      });
+      $('a.inline').fancybox({
+        'hideOnContentClick': true
+      });
+    });
+    $(document).ready(function(){
+      $('#tabs div.tab').hide();
+      $('#tabs div:first').show();
+      $('#tabs ul li:first').addClass('active');
+
+      $('#tabs ul li a').click(function(){
+        $('#tabs ul li').removeClass('active');
+        $(this).parent().addClass('active');
+        var currentTab = $(this).attr('href');
+        $('#tabs div.tab').hide();
+        $(currentTab).show();
+        return false;
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div id="header">
+  <a href="/"><img src="/img/css/logo.png"></a>
+</div>
+
+  <div class="container_16">
+    <ul id="nav" class="grid_16">
+  <li class="first">
+    <a href="/" class="parent">Inicio</a>
+  </li>
+  <li class="first">
+    <a href="/postres" id="galerias" class="parent">Postres</a>
+    <ul>
+      <li><a href="/postres/tortas">Tortas</a></li>
+      <li><a href="/postres/pies">Pies</a></li>
+      <li><a href="/postres/tortas-especiales">Tortas Especiales</a></li>
+      <li><a href="/postres/miniaturas">Miniaturas</a></li>
+      <li><a href="/postres/mesa-de-postres">Mesa de Postres</a></li>
+    </ul>
+  </li>
+  <li class="first">
+    <a href="/preguntas-frecuentes/" id="faqs" class="parent">Preguntas Frecuentes</a>
+  </li>
+  <li class="first">
+    <a href="#" id="nosotros" class="parent">Nosotros</a>
+    <ul>
+      <!--li><a href="/nosotros/quienes-somos.html">Quienes Somos</a></li-->
+      <li><a href="/nosotros/testimonios">Testimonios</a></li>
+      <!--li><a href="/nosotros/prensa.html">Prensa</a></li-->
+    </ul>
+  </li>
+  <li>
+    <a href="#" id="contactanos" class="parent">Contáctanos</a>
+    <ul class="last">
+      <!--li><a href="/contactanos/datos-de-contacto.html">Info</a></li>
+      <li><a href="/contactanos/pedido-en-linea.html">Pedido en Línea</a></li>
+      <li><a href="/contactanos/dudas-y-comentarios.html">Dudas y Comentarios</a></li-->
+      <li><a href="/contactanos/redes-sociales">Redes Sociales</a></li>
+    </ul>
+  </li>
+</ul>
+<div class="clear"></div>
+
+    <div id="content" class="clearfix">
+      <div class="grid_16">
+  <h1><a href="/postres/tortas-especiales" class="back">Tortas Especiales</a> : Celebraciones</h1>
+
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_cala_boda.jpg" class="gallery" title="Torta de Boda con calas">
+      <img src="/img/thumbnails/tortas-especiales/torta_cala_boda.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_boda_tata.jpg" class="gallery" title="Torta de Boda">
+      <img src="/img/thumbnails/tortas-especiales/torta_boda_tata.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5 l">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_de_boda_de_margaritas.jpg" class="gallery" title="Torta de Boda con margaritas">
+      <img src="/img/thumbnails/tortas-especiales/torta_de_boda_de_margaritas.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_cuadrada.jpg" class="gallery" title="Torta cuadrada">
+      <img src="/img/thumbnails/tortas-especiales/torta_cuadrada.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_vinotinto.jpg" class="gallery" title="Torta vinotinto">
+      <img src="/img/thumbnails/tortas-especiales/torta_vinotinto.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5 l">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_bautizo_azul.jpg" class="gallery" title="Torta de Bautizo azul">
+      <img src="/img/thumbnails/tortas-especiales/torta_bautizo_azul.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_bautizo_rayas.jpg" class="gallery" title="Torta de Bautizo con rayas">
+      <img src="/img/thumbnails/tortas-especiales/torta_bautizo_rayas.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_de_babyshower_de_circulos.jpg" class="gallery" title="Torta de babyshower con círculos">
+      <img src="/img/thumbnails/tortas-especiales/torta_de_babyshower_de_circulos.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5 l">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_camila.jpg" class="gallery" title="Torta Camila">
+      <img src="/img/thumbnails/tortas-especiales/torta_camila.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_de_aniversario_50.jpg" class="gallery" title="Torta de aniversario 50">
+      <img src="/img/thumbnails/tortas-especiales/torta_de_aniversario_50.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_de_babyshower_con_cubo_de_letras.jpg" class="gallery" title="Torta de babyshower con cubo de letras">
+      <img src="/img/thumbnails/tortas-especiales/torta_de_babyshower_con_cubo_de_letras.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5 l">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_circulos_morada.jpg" class="gallery" title="Torta de círculos morada">
+      <img src="/img/thumbnails/tortas-especiales/torta_circulos_morada.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_nicolas.jpg" class="gallery" title="Torta Nicolás">
+      <img src="/img/thumbnails/tortas-especiales/torta_nicolas.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_regalo.jpg" class="gallery" title="Torta Caja de Regalo">
+      <img src="/img/thumbnails/tortas-especiales/torta_regalo.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5 l">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_cubo.jpg" class="gallery" title="Torta de Cubo">
+      <img src="/img/thumbnails/tortas-especiales/torta_cubo.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_de_lineas.jpg" class="gallery" title="Torta de líneas">
+      <img src="/img/thumbnails/tortas-especiales/torta_de_lineas.jpg">
+    </a>
+  </div>
+  <div class="grid_5 custom_5">
+    <a rel="gallery" href="/img/galerias/tortas-especiales/torta_blanco_negro.jpg" class="gallery" title="Torta Blanco y Negro">
+      <img src="/img/thumbnails/tortas-especiales/torta_blanco_negro.jpg">
+    </a>
+  </div>
+</div>
+
+    </div>
+    <p id="footer" class="grid_16">
+  &copy 2011-2012 Petit-Petit Gourmet C.A. RIF J-30912077-8.<br />
+  Todos los derechos reservados.
+</p>
+
+  </div>
+</body>
+</html>

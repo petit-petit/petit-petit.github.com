@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+
+  <title>Pies | Petit-Petit</title>
+  <meta name="description" content="Conoce nuestra gran variedad de pies de diferentes sabores y tamaños">
+
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="/css/grid.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,800">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+  <!--script src="/js/hide.js"></script-->
+  <script>
+    $(document).ready(function(){
+      $("a.gallery").fancybox({
+        'titlePosition': 'inside',
+        'overlayOpacity': 0.1,
+        'padding': 20
+      });
+      $('a.inline').fancybox({
+        'hideOnContentClick': true
+      });
+    });
+    $(document).ready(function(){
+      $('#tabs div.tab').hide();
+      $('#tabs div:first').show();
+      $('#tabs ul li:first').addClass('active');
+
+      $('#tabs ul li a').click(function(){
+        $('#tabs ul li').removeClass('active');
+        $(this).parent().addClass('active');
+        var currentTab = $(this).attr('href');
+        $('#tabs div.tab').hide();
+        $(currentTab).show();
+        return false;
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div id="header">
+  <a href="/"><img src="/img/css/logo.png"></a>
+</div>
+
+  <div class="container_16">
+    <ul id="nav" class="grid_16">
+  <li class="first">
+    <a href="/" class="parent">Inicio</a>
+  </li>
+  <li class="first">
+    <a href="/postres" id="galerias" class="parent">Postres</a>
+    <ul>
+      <li><a href="/postres/tortas">Tortas</a></li>
+      <li><a href="/postres/pies">Pies</a></li>
+      <li><a href="/postres/tortas-especiales">Tortas Especiales</a></li>
+      <li><a href="/postres/miniaturas">Miniaturas</a></li>
+      <li><a href="/postres/mesa-de-postres">Mesa de Postres</a></li>
+    </ul>
+  </li>
+  <li class="first">
+    <a href="/preguntas-frecuentes/" id="faqs" class="parent">Preguntas Frecuentes</a>
+  </li>
+  <li class="first">
+    <a href="#" id="nosotros" class="parent">Nosotros</a>
+    <ul>
+      <!--li><a href="/nosotros/quienes-somos.html">Quienes Somos</a></li-->
+      <li><a href="/nosotros/testimonios">Testimonios</a></li>
+      <!--li><a href="/nosotros/prensa.html">Prensa</a></li-->
+    </ul>
+  </li>
+  <li>
+    <a href="#" id="contactanos" class="parent">Contáctanos</a>
+    <ul class="last">
+      <!--li><a href="/contactanos/datos-de-contacto.html">Info</a></li>
+      <li><a href="/contactanos/pedido-en-linea.html">Pedido en Línea</a></li>
+      <li><a href="/contactanos/dudas-y-comentarios.html">Dudas y Comentarios</a></li-->
+      <li><a href="/contactanos/redes-sociales">Redes Sociales</a></li>
+    </ul>
+  </li>
+</ul>
+<div class="clear"></div>
+
+    <div id="content" class="clearfix">
+      <div class="grid_10">
+
+  <div class="thumbnails grid_3 alpha">
+    <a rel="gallery1" href="/img/galerias/pies/p-chocolate.jpg" class="gallery" title="Pie de chocolate<br/><span>Grand / Personal / Petit / Petit-Petit</span>">
+      <img src="/img/thumbnails/pies/p-chocolate.jpg">
+    </a>
+  </div>
+  <div class="thumbnails grid_3">
+    <a rel="gallery1" href="/img/galerias/pies/p-chocolate-blanco.jpg" class="gallery" title="Pie de chocolate blanco<br/><span>Personal / Petit / Petit-Petit</span>">
+      <img src="/img/thumbnails/pies/p-chocolate-blanco.jpg">
+    </a>
+  </div>
+  <div class="thumbnails grid_3 omega">
+    <a rel="gallery1" href="/img/galerias/pies/p-durazno.jpg" class="gallery" title="Pie de durazno<br/><span>Grand / Personal / Petit / Petit-Petit</span>">
+      <img src="/img/thumbnails/pies/p-durazno.jpg">
+    </a>
+  </div>
+
+  <div class="thumbnails grid_3 alpha">
+    <a rel="gallery1" href="/img/galerias/pies/p-guanabana.jpg" class="gallery" title="Pie de guanábana<br/><span>Grand / Personal / Petit / Petit-Petit</span>">
+      <img src="/img/thumbnails/pies/p-guanabana.jpg">
+    </a>
+  </div>
+  <div class="thumbnails grid_3">
+    <a rel="gallery1" href="/img/galerias/pies/p-guayaba.jpg" class="gallery" title="Pie de guayaba<br/><span>Grand / Personal / Petit / Petit-Petit</span>">
+      <img src="/img/thumbnails/pies/p-guayaba.jpg">
+    </a>
+  </div>
+  <div class="thumbnails grid_3 omega">
+    <a rel="gallery1" href="/img/galerias/pies/p-limon.jpg" class="gallery" title="Pie de limón<br/><span>Grand / Personal / Petit / Petit-Petit</span>">
+      <img src="/img/thumbnails/pies/p-limon.jpg">
+    </a>
+  </div>
+
+  <div class="thumbnails grid_3 alpha">
+    <a rel="gallery1" href="/img/galerias/pies/p-manzana.jpg" class="gallery" title="Pie de manzana<br/><span>Grand / Personal / Petit / Petit-Petit</span>">
+      <img src="/img/thumbnails/pies/p-manzana.jpg">
+    </a>
+  </div>
+  <div class="thumbnails grid_3">
+    <a rel="gallery1" href="/img/galerias/pies/p-parchita.jpg" class="gallery" title="Pie de parchita<br/><span>Grand / Personal / Petit / Petit-Petit</span>">
+      <img src="/img/thumbnails/pies/p-parchita.jpg">
+    </a>
+  </div>
+  <div class="thumbnails grid_3 omega">
+    <a rel="gallery1" href="/img/galerias/pies/p-pina.jpg" class="gallery" title="Pie de piña<br/><span>Grand / Personal / Petit / Petit-Petit</span>">
+      <img src="/img/thumbnails/pies/p-pina.jpg">
+    </a>
+  </div>
+  <div class="thumbnails grid_3 alpha">
+    <a rel="gallery1" href="/img/galerias/pies/bandeja.jpg" class="gallery" title="Bandeja de pies">
+      <img src="/img/thumbnails/pies/bandeja.jpg">
+    </a>
+  </div>
+</div>
+
+<div class="grid_6 menu">
+  <h1>Pies</h1>
+  <ul>
+    <li><a rel="gallery2" href="/img/galerias/pies/p-chocolate.jpg" class="gallery" title="Pie de chocolate<br/><span>Grand / Personal / Petit / Petit-Petit</span>">Pie de chocolate</a></li>
+    <li><a rel="gallery2" href="/img/galerias/pies/p-chocolate-blanco.jpg" class="gallery" title="Pie de chocolate blanco<br/><span>Personal / Petit / Petit-Petit</span>">Pie de chocolate blanco</a></li>
+    <li><a rel="gallery2" href="/img/galerias/pies/p-durazno.jpg" class="gallery" title="Pie de durazno<br/><span>Grand / Personal / Petit / Petit-Petit</span>">Pie de durazno</a></li>
+    <li><a rel="gallery2" href="/img/galerias/pies/p-guanabana.jpg" class="gallery"title="Pie de guanábana<br/><span>Grand / Personal / Petit / Petit-Petit</span>">Pie de guanábana</a></li>
+    <li><a rel="gallery2" href="/img/galerias/pies/p-guayaba.jpg" class="gallery" title="Pie de guayaba<br/><span>Grand / Personal / Petit / Petit-Petit</span>">Pie de guayaba</a></li>
+    <li><a rel="gallery2" href="/img/galerias/pies/p-limon.jpg" class="gallery" title="Pie de limón<br/><span>Grand / Personal / Petit / Petit-Petit</span>">Pie de limón</a></li>
+    <li><a rel="gallery2" href="/img/galerias/pies/p-manzana.jpg" class="gallery" title="Pie de manzana<br/><span>Grand / Personal / Petit / Petit-Petit</span>">Pie de manzana</a></li>
+    <li><a rel="gallery2" href="/img/galerias/pies/p-parchita.jpg" class="gallery" title="Pie de parchita<br/><span>Grand / Personal / Petit / Petit-Petit</span>">Pie de parchita</a></li>
+    <li><a rel="gallery2" href="/img/galerias/pies/p-pina.jpg" class="gallery" title="Pie de piña<br/><span>Grand / Personal / Petit / Petit-Petit</span>">Pie de piña</a></li>
+    <li>Pie de lechoza-piña</li>
+    <li><a rel="gallery2" href="/img/galerias/pies/bandeja.jpg" class="gallery" title="Bandeja de pies">Bandeja de pies</a></li>
+  </ul>
+</div>
+<div class="clear"></div>
+
+    </div>
+    <p id="footer" class="grid_16">
+  &copy 2011-2012 Petit-Petit Gourmet C.A. RIF J-30912077-8.<br />
+  Todos los derechos reservados.
+</p>
+
+  </div>
+</body>
+</html>
